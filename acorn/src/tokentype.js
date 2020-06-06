@@ -76,6 +76,7 @@ export const types = {
   ellipsis: new TokenType("...", beforeExpr),
   backQuote: new TokenType("`", startsExpr),
   dollarBraceL: new TokenType("${", {beforeExpr: true, startsExpr: true}),
+  optionalChaining: new TokenType("?."),
 
   // Operators. These carry several kinds of properties to help the
   // parser use them properly (the presence of these properties is
